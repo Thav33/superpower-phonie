@@ -9,9 +9,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <h2>make some magic here!!</h2>
-
+   <main>
+        <marquee behavior="alternate" direction="right">Enter a number to determine its network</marquee>
+        <h2> Phonie Project </h2>
+        <div class="network-image">
+            <img src="" alt="">
+        </div>
+        <form>
+            <div>
+                <span class="errorText"></span>
+                <input type="tel" name="entry" id="phonie" title="This input only verifies airtel numbers" maxlength=""
+                    pattern="(\+?(234)?0?)(70[18]|80[28]|90[127]|812)(\d{7})?" oninput="reportValidity()">
+                    <ul id="results"></ul>
+                <span class="networkIcon"></span>
+            </div>
+            <input type="button" value="Submit">
+        </form>
+    </main>
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
     <!-- // ============= EEND DO NOT EDIT ============== // -->

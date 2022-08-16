@@ -1,0 +1,120 @@
+html,body{
+  height:100%;
+  width:100%;
+}
+*{
+    margin:0;
+}
+:root{
+    --main-color: #00a2ff;
+    --ash-color: #f1f1f1;
+    --white-color: #ffffff;
+    --main-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color:var(--ash-color);
+    padding-top:5%;
+    background-image: url('images/bg-img-2.jpg');
+    background-size:cover;
+    background-position:center bottom;
+  background-repeat: no-repeat;
+}
+main{
+    width:40%;
+    margin: 0 auto;
+    background-color: var(--white-color);
+    border-radius:20px;
+    border: 2px dashed var(--main-color);
+    text-align: center; 
+    padding:5%;
+    opacity:0.9;
+}
+marquee{
+    font-family: var(--main-font-family);
+}
+h2{
+    font-size: 50px;
+    font-family:var(--main-font-family);
+    line-height: 90px;
+}
+form{
+    width:70%;
+    margin:0 auto;
+    position:relative;
+}
+input{
+    width:100%;
+    padding: 8px 20px;
+    border-radius:5px;
+    margin:10px 0;
+}
+input[type="button"]{
+    background-color: var(--main-color);
+    border:none;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:bold;
+    color:var(--white-color);
+    font-family: var(--main-font-family);
+    letter-spacing: 2px;
+}
+input[type="button"]:hover{
+    background-color: #5e5e5e;
+    transition: all 0.7s;
+}
+input[type="tel"] {
+    border: 2px solid #000000; 
+    width: 89%;
+}
+input[type="tel"]:focus {
+    border-color:#00a2ff;
+    background-color:var(--ash-color);
+}
+input[type="tel"]:invalid{
+    border:1px solid red;
+}
+div.network-image img{
+    width:50px;
+    border-radius: 50%;
+    display: none;;
+}
+span.networkIcon::before{
+    content: " ";
+    background: var(--icon-image);
+    display: block;
+    width:20px;
+    height:20px;
+    position: absolute;
+    left: 93%;
+    bottom: 74px;
+}
+ul#results {
+    list-style-type: none;
+    text-align: left !important;
+    position: absolute;
+    width: 50%;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #000;
+}
+ul#results li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+@media(max-width:768px){
+    main{
+        width:75%;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    marquee {
+        font-size: 14px;
+    }
+    form {
+        width: 87%;
+    }
+    span.networkIcon::before {
+        left: 86%;
+    }
+}
