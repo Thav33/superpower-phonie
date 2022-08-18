@@ -118,3 +118,6 @@ ul#results li {
         left: 86%;
     }
 }
+.errorText{
+  color: red;
+}
